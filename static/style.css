@@ -1,12 +1,6 @@
-h1{
-    text-align: center;
-    color: #fff;
-   
-    
-   
 
-}
 
+/* nessa inicia a estilização basica do cabeçalho */
 .cabecalho{
     width: 100%;
     height: 70px;
@@ -27,43 +21,58 @@ a.nav-link{
     color: #fff;
 }
 
-
-
+/* Inicia a estilização do "sou o victor */
 h2{
-text-align: left;
-color: #D7AA7C;
-margin: 100px;
-font-weight: bold;
-padding: 0px;
-margin-top: 80px;
-display: flex;
-
-
-
-
-}
-
-
-P{
-
+    text-align: left;
+    color: #D7AA7C;
+    margin: 100px;
+    font-weight: bold;
+    padding: 0px;
+    margin-top: 80px;
+    display: flex;
     
-    width: 40%;
-    height: 40%;
-    margin-left: 90px;
-    display: inline-block;
-    margin-top: -180px;
+    
+    
+    
+    }
+    
+    
+    P{
+    
+        
+        width: 40%;
+        height: 40%;
+        margin-left: 90px;
+        display: inline-block;
+        margin-top: -180px;
+        color: #fff;
+    }
+    
+    img{
+        width: 500px;
+        height: 300px;
+        margin: 30px;
+        display: inline-block;
+        margin-top: -140px;
+        
+    }
+
+h1{
+    text-align: center;
     color: #fff;
-}
-
-img{
-    width: 500px;
-    height: 300px;
-    margin: 30px;
-    display: inline-block;
-    margin-top: -140px;
+   
     
+
 }
 
+
+/* Inicia a estilização de minhas Habilidades */
+
+.habilidades{
+
+
+
+}
 span.border.border-secondary{
     padding: 20px;
     border: #c8ebe9;
@@ -83,9 +92,63 @@ span.border.border-secondary{
 
 }
 
-.projetos{
-    background-color:#1e1f35;
-    color: #fff;
-    border-style: outset;
 
+
+.grid.text-center{
+
+    padding: 5px;
+    margin: 0px 15px;
+}
+
+
+.Empresas{
+
+padding: 50px;
+}
+
+
+
+.empresa1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: #1e1f35;
+    width: 500px;
+    height: 200px;
+    display: inline-block;
+    border: #fff;
+    border-style: groove;
+    margin-left: 50px;
+
+
+}
+
+img#projeto{
+    display: inline-block;
+    width: 23%;
+    height: 23%;
+    margin: 30px;
+    margin-left: 90px;
+}
+
+
+.projetos{
+    display: inline-block;
+   
+
+}
+
+h3{
+
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+
+img#mobile{
+    margin-top: 10%;
+    margin-right: 10px;
+    width: 300px;
+    height: 400px;
 }
