@@ -231,13 +231,9 @@ h1, .h1 {
   }
 }
 
-h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
-}
+
 @media (min-width: 1200px) {
-  h2, .h2 {
-    font-size: 2rem;
-  }
+ 
 }
 
 h3, .h3 {
@@ -4394,7 +4390,6 @@ textarea.form-control-lg {
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
-  --bs-card-bg: var(--bs-body-bg);
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;

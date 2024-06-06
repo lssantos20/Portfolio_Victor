@@ -1,19 +1,19 @@
-
-
 /* nessa inicia a estilização basica do cabeçalho */
 .cabecalho{
     width: 100%;
     height: 70px;
     background-color: rgb(34, 34, 44);
     color: #ffff;
-    padding: 10px;
+    padding: 10px 3px;
+    margin: 0px 10px;
     
 }
 
 body{
     color: #fff;
     background-color:#1e1f35 ;
-    border: #fff;
+   font-family: Arial, sans-serif;
+            
 }
 
 a.nav-link{
@@ -22,45 +22,56 @@ a.nav-link{
 }
 
 /* Inicia a estilização do "sou o victor */
-h2{
-    text-align: left;
-    color: #D7AA7C;
-    margin: 100px;
-    font-weight: bold;
-    padding: 0px;
-    margin-top: 80px;
-    display: flex;
+
     
     
-    
-    
-    }
-    
-    
-    P{
-    
-        
-        width: 40%;
-        height: 40%;
-        margin-left: 90px;
-        display: inline-block;
-        margin-top: -180px;
-        color: #fff;
-    }
+   
+   
     
     img{
         width: 500px;
         height: 300px;
         margin: 30px;
         display: inline-block;
-        margin-top: -140px;
+        margin: 0 0 20px 0;
+        max-width: 800px;
         
     }
 
 h1{
     text-align: center;
     color: #fff;
+    padding: 20px;
    
+
+}
+
+.victor{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+h2#victor{
+    padding: 10px 20px ;
+    color: coral;
+    font-size: 2em;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    word-break: normal;
+    display: block;
+    
+    
+}
+
+
+P.description{
+    display: block;
+    font-size: 1.2em;
+    line-height: 1.5;
     
 
 }
@@ -76,10 +87,10 @@ h1{
 span.border.border-secondary{
     padding: 20px;
     border: #c8ebe9;
-    width: 150px;
-    height: 0px;
+    width: 300px;
+    height: -10px;
     display: inline-flex;
-    margin: 0px 10px;
+    margin: 10px 10px;
 }
 
 .span{
@@ -89,6 +100,9 @@ span.border.border-secondary{
     height: 400px;
     border-style: outset;
     color: #fff;
+    
+    
+
 
 }
 
@@ -100,11 +114,6 @@ span.border.border-secondary{
     margin: 0px 15px;
 }
 
-
-.Empresas{
-
-padding: 50px;
-}
 
 
 
@@ -125,10 +134,10 @@ padding: 50px;
 
 img#projeto{
     display: inline-block;
-    width: 23%;
-    height: 23%;
-    margin: 30px;
-    margin-left: 90px;
+    width: 400px;
+    height: 300px;
+    margin: 14px;
+    margin-left: 40px;
 }
 
 
@@ -147,8 +156,182 @@ h3{
 
 
 img#mobile{
+    max-width: 100%;
     margin-top: 10%;
-    margin-right: 10px;
+    margin-right: 100px;
+    width: 400px;
+    height: 600px;
+    margin: 99px 90px 90px 90px;
+    padding: -30px;
+    
+}
+
+img#whatsapp{
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    margin-top: 40%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 2290px;
+    left: 810px;
+
+}
+
+img#github{
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    margin-top: 40%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 2290px;
+    left: 890px;
+}
+
+
+img#linkedn{
+    
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    width: 60px;
+    height: 60px;
+    margin-top: 40%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 2290px;
+    left: 980px;
+
+}
+
+img#card1{
+   top: 2700px;
     width: 300px;
-    height: 400px;
+    height: 50px;
+    margin: 60px 60px;
+    position: absolute;
+    left: 150px;
+    
+}
+
+img#card2{
+    top: 2800px;
+    width: 300px;
+    height: 50px;
+    margin: 60px 60px;
+    position: absolute;
+    left: 150px;
+    background-color: url()
+    
+    
+}
+
+img#card3{
+    top: 2900px;
+    width: 300px;
+    height: 50px;
+    margin: 60px 60px;
+    position: absolute;
+    left: 150px;
+    
+    
+}
+
+
+h1#emcontato{
+
+    margin: 20px 10px 10px 30px;
+}
+
+#contato.Contato{
+
+    text-align: center;
+    justify-content: center;
+    margin: 90px;
+    
+
+}
+
+
+
+h4{
+
+    margin-top: -30px;
+    padding: 20px;
+    margin-right: 30px;
+}
+
+
+.empresas_confiam{
+    display: flex;
+
+    flex-wrap: wrap;
+}
+.container-card{
+    margin: 5vh 5vw 5vh 4vw;
+    max-width: 40vw;
+    padding: 2vw;
+    border: solid 0.5px;
+    justify-content: start;
+ 
+}
+
+
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin: 80px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    
+}
+
+.date{
+    padding: 1vw;
+    
+    justify-content: end;
+    width: 100%;
+    text-align: end;
+}
+
+@media screen  and (max-width: 1000px) { 
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+
+    }
+
+    header, form, table, img{
+    width: 70%;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+    table , th , td{
+
+        text-align: center;
+    }
+    
+    span.border.border-secondary, img#card1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px;
+    }
 }

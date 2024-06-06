@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Victor Hugo</title>
+    
     <link rel="stylesheet" href="static/bootstrap.css">
     <link rel="stylesheet" href="static/style.css">
+    
 
 </head>
 <body>
@@ -17,16 +19,16 @@
               <a class="nav-link active" aria-current="page" href="#">Inicio |</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Habilidades|</a>
+              <a class="nav-link" href="#skills">Habilidades    |</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Empresas</a>
+              <a class="nav-link" href="#empresas">Empresas |</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">Projetos </a>
+              <a class="nav-link " href="#projetos">Projetos | </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link" href="#contato">Contato |</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Linkedn </a>
@@ -36,9 +38,9 @@
     <div class="victor">
       
 
-      <h2> Olá, Sou o Victor Hugo.</h2>
-
-      <p>Sou um desenvolvedor programador com sólida formação e experiência na criação de soluções tecnológicas inovadoras.
+      <h2 id="victor"  > Olá, Sou o Victor Hugo.</h2>
+      
+      <p class="description">Sou um desenvolvedor programador com sólida formação e experiência na criação de soluções tecnológicas inovadoras.
          Minha paixão pela programação e resolução de problemas me impulsiona a buscar constantemente maneiras de aprimorar
           e otimizar processos por meio do desenvolvimento de software. </p>
 
@@ -47,8 +49,8 @@
     </div>
 
 
-    <h1>Minhas Habilidades</h1>
-    <div class="container" id="skills">
+    <h1 id="skills" >Minhas Habilidades </h1>
+    <div class="container" >
         
         <div class="grid text-center">
             
@@ -116,35 +118,80 @@
     
 
     
-
-  <div class="Empresas">
-
-
-
-      <h1>Empresas que confiam</h1>
+    <h1>Empresas que confiam</h1>
+    <div class="empresas_confiam">
       
+      <div class="container-card">
+          <div class="card">
+              MOOVII <br>
+              DESENVOLVEDOR
+            
+              <div class="date">
+                  12/2022 - 09/2023 
+              </div>
+          </div>
+  
+              <div class="texts">
+              </div>
+              <h2>Desenvolvimento de aplicações web com as tecnologias C#, python, HTML5, CSS e PostgreSQL e alguns serviços de infra.                   
+              </h2>
+         
+       
+      </div>
+      <div class="container-card">
+          <div class="card">
+              MOOVII <br>
+              DESENVOLVEDOR
+            
+              <div class="date">
+                  12/2022 - 09/2023 
+              </div>
+          </div>
+  
+              <div class="texts">
+              </div>
+              <h2>Desenvolvimento de aplicações web com as tecnologias C#, python, HTML5, CSS e PostgreSQL e alguns serviços de infra.                   
+              </h2>
+         
+       
+      </div>
+      <div class="container-card">
+          <div class="card">
+              MOOVII <br>
+              DESENVOLVEDOR
+            
+              <div class="date">
+                  12/2022 - 09/2023 
+              </div>
+          </div>
+  
+              <div class="texts">
+              </div>
+              <h2>Desenvolvimento de aplicações web com as tecnologias C#, python, HTML5, CSS e PostgreSQL e alguns serviços de infra.                   
+              </h2>
+         
+       
+      </div>
+      <div class="container-card">
+          <div class="card">
+              MOOVII <br>
+              DESENVOLVEDOR
+            
+              <div class="date">
+                  12/2022 - 09/2023 
+              </div>
+          </div>
+  
+              <div class="texts">
+              </div>
+              <h2>Desenvolvimento de aplicações web com as tecnologias C#, python, HTML5, CSS e PostgreSQL e alguns serviços de infra.                   
+              </h2>
+         
+       
+      </div>
+  
 
-      <div class="empresa1">
-      <h4>Moovii Desenvolvedor </h4>
-      <span>Desenvolvimento de aplicações web com as tecnologias C#, python, HTML5, CSS e PostgreSQL e alguns serviços de infra. </span>
-     </div>
-     <div class="empresa1">
-      <h4>Analista de sistemas</h4>
-      <span>Manutenção e desenvolvimento de apis utilizando apigee e git.  </span>
-      <h4>Analista de sistemas</h4>
-    </div>
-
-    <div class="empresa1">
-      <h4>Moovii Desenvolvedor </h4>
-      <span>Desenvolvimento de aplicações web com as tecnologias C#, python, HTML5, CSS e PostgreSQL e alguns serviços de infra. </span>
-     </div>
-     <div class="empresa1">
-      <h4>Analista de sistemas</h4>
-      <span>Manutenção e desenvolvimento de apis utilizando apigee e git.  </span>
-      <h4>Analista de sistemas</h4>
-    </div>
-
-    <div class="projetos">
+    <div class="projetos" id="projetos">
       <h1>Meus Projetos</h1>
 
       <img id="projeto" src="Img/Projeto1.png" alt="projeto1">
@@ -154,16 +201,23 @@
 
     </div>
 
-    <div class="Contato">
-        <h1>Entre em contato</h1>
-        <h3> Clique nos icones abaixo 
+    <div class="Contato" id="contato">
+        <h1 id="emcontato">Entre em contato</h1>
+        <h3 id="clique"> Clique nos icones abaixo 
             para entrar em contato
         </h3>
 
         <img id="mobile" src="/Img/Victor_mobile.png" alt="Victor Mobile">
+        <a href="href=https://wa.me/551198123456789">
+        <img id="whatsapp" src="/Img/wpp.png" alt="whatsapp">
+        
+        <img id="github"  src="/Img/Github.png" alt="Github">
+        <img id="linkedn" src="Img/Linkedin.png" alt="Linkedn">
         <img id="mobile" src="Img/Victor_mobile2.png" alt="Victor Mobile">
 
-
+        <img id="card1"  src="/Img/card.png" alt="card1">
+        <img id="card2" src="/Img/card.png" alt="card2">
+        <img id="card3" src="/Img/card.png" alt="card3">
     </div>
 
    
