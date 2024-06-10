@@ -1,337 +1,483 @@
 /* nessa inicia a estilização basica do cabeçalho */
-.cabecalho{
-    width: 100%;
-    height: 70px;
-    background-color: rgb(34, 34, 44);
-    color: #ffff;
-    padding: 10px 3px;
-    margin: 0px 10px;
-    
+.cabecalho {
+  max-width: 100%;
+  height: 70px;
+  background-color: rgb(34, 34, 44);
+  color: #ffff;
+  padding: 10px 3px;
+  margin: 0px 10px;
 }
 
-body{
-    color: #fff;
-    background-color:#1e1f35 ;
-   font-family: Arial, sans-serif;
-            
+img.logo {
+  max-width: 100%;
+  width: 30px;
+  height: 30px;
 }
 
-a.nav-link{
+body {
+  color: #fff;
+  background-color: #1e1f35;
+  font-family: Arial, sans-serif;
+}
 
-    color: #fff;
+a.nav-link {
+  color: #fff;
 }
 
 /* Inicia a estilização do "sou o victor */
 
-    
-    
-   
-   
-    
-    img{
-        width: 500px;
-        height: 300px;
-        margin: 30px;
-        display: inline-block;
-        margin: 0 0 20px 0;
-        max-width: 800px;
-        
-    }
-
-h1{
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-   
-
+img {
+  width: 500px;
+  height: 300px;
+  margin: 30px;
+  display: inline-block;
+  margin: 0 0 20px 0;
+  max-width: 800px;
 }
 
-.victor{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-
+h1 {
+  margin: 20px 0px 10px 50px;
+  justify-content: center;
+  margin-right: 0px;
+  margin-left: 180px;
 }
 
-h2#victor{
-    padding: 10px 20px ;
-    color: coral;
-    font-size: 2em;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-    word-break: normal;
-    display: block;
-    
-    
+h1#skills {
+  text-align: center;
+  margin-left: -10px;
+  justify-content: center;
 }
 
-
-P.description{
-    display: block;
-    font-size: 1.2em;
-    line-height: 1.5;
-    
-
+.victor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
+h1.myprojects {
+  text-align: center;
+  justify-content: center;
+  margin-left: 90px;
+}
+
+h2#victor {
+  padding: 10px 20px;
+  color: coral;
+  font-size: 2em;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  word-break: normal;
+  display: block;
+}
+
+P.description {
+  display: block;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
 
 /* Inicia a estilização de minhas Habilidades */
 
-.habilidades{
-
-
-
+.habilidades {
 }
-span.border.border-secondary{
-    padding: 20px;
-    border: #c8ebe9;
-    width: 300px;
-    height: -10px;
-    display: inline-flex;
-    margin: 10px 10px;
+span.border.border-secondary {
+  padding: 20px;
+  border: #c8ebe9;
+  width: 300px;
+  height: -10px;
+  display: inline-flex;
+  margin: 10px 10px;
 }
 
-.span{
-    border: #fff;
-    background-color: #1e1f35;
-    width: 400px;
-    height: 400px;
-    border-style: outset;
-    color: #fff;
-    
-    
-
-
+.span {
+  border: #fff;
+  background-color: #1e1f35;
+  width: 400px;
+  height: 400px;
+  border-style: outset;
+  color: #fff;
 }
 
-
-
-.grid.text-center{
-
-    padding: 5px;
-    margin: 0px 15px;
+.grid.text-center {
+  padding: 5px;
+  margin: 0px 15px;
 }
 
-
-
-
-.empresa1{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin: 10px 10px 10px 10px;
-    background-color: #1e1f35;
-    width: 500px;
-    height: 200px;
-    display: inline-block;
-    border: #fff;
-    border-style: groove;
-    margin-left: 50px;
-
-
+h1.empresas {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-left: 10px;
 }
 
-img#projeto{
-    display: inline-block;
-    width: 400px;
-    height: 300px;
-    margin: 14px;
-    margin-left: 40px;
+.empresa1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: 10px 10px 10px 10px;
+  background-color: #1e1f35;
+  width: 500px;
+  height: 200px;
+  display: inline-block;
+  border: #fff;
+  border-style: groove;
+  margin-left: 50px;
 }
 
-
-.projetos{
-    display: inline-block;
-   
-
+img#projeto {
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+  margin: 14px;
+  margin-left: 40px;
 }
 
-h3{
-
-    text-align: center;
-    font-size: 20px;
-    
+.projetos {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
 }
 
-
-img#mobile{
-    max-width: 100%;
-    margin-top: 10%;
-    margin-right: 100px;
-    width: 400px;
-    height: 600px;
-    margin: 99px 90px 90px 90px;
-    padding: -30px;
-    
+h3 {
+  text-align: center;
+  font-size: 20px;
 }
 
-img#whatsapp{
-    max-width: 100%;
-    width: 60px;
-    height: 60px;
-    margin-top: 40%;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 2290px;
-    left: 810px;
-
+img#mobile {
+  max-width: 100%;
+  margin-top: 10%;
+  margin-right: 100px;
+  width: 400px;
+  height: 600px;
+  margin: 99px 90px 90px 90px;
+  padding: -30px;
 }
 
-img#github{
-    max-width: 100%;
-    width: 60px;
-    height: 60px;
-    margin-top: 40%;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 2290px;
-    left: 890px;
+img#whatsapp {
+  max-width: 100%;
+  width: 60px;
+  height: 60px;
+  margin-top: 40%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 2090px;
+  left: 950px;
 }
 
-
-img#linkedn{
-    
-    max-width: 100%;
-    width: 60px;
-    height: 60px;
-    width: 60px;
-    height: 60px;
-    margin-top: 40%;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 2290px;
-    left: 980px;
-
+img#github {
+  max-width: 100%;
+  width: 60px;
+  height: 60px;
+  margin-top: 40%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 2090px;
+  left: 1050px;
 }
 
-img#card1{
-   top: 2700px;
-    width: 300px;
-    height: 50px;
-    margin: 60px 60px;
-    position: absolute;
-    left: 150px;
-    
+img#linkedn {
+  max-width: 100%;
+  width: 60px;
+  height: 60px;
+  width: 60px;
+  height: 60px;
+  margin-top: 40%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 2190px;
+  left: 980px;
 }
 
-img#card2{
-    top: 2800px;
-    width: 300px;
-    height: 50px;
-    margin: 60px 60px;
-    position: absolute;
-    left: 150px;
-    background-color: url()
-    
-    
+img#card1 {
+  top: 3000px;
+  width: 300px;
+  height: 50px;
+  margin: 60px 60px;
+  position: absolute;
+  left: 150px;
 }
 
-img#card3{
-    top: 2900px;
-    width: 300px;
-    height: 50px;
-    margin: 60px 60px;
-    position: absolute;
-    left: 150px;
-    
-    
+img#card2 {
+  top: 2800px;
+  width: 300px;
+  height: 50px;
+  margin: 60px 60px;
+  position: absolute;
+  left: 150px;
+  background-color: url();
 }
 
-
-h1#emcontato{
-
-    margin: 20px 10px 10px 30px;
+img#card3 {
+  top: 2900px;
+  width: 300px;
+  height: 50px;
+  margin: 60px 60px;
+  position: absolute;
+  left: 150px;
 }
 
-#contato.Contato{
-
-    text-align: center;
-    justify-content: center;
-    margin: 90px;
-    
-
+h1#emcontato {
+  margin: 20px 10px 10px 30px;
 }
 
-
-
-h4{
-
-    margin-top: -30px;
-    padding: 20px;
-    margin-right: 30px;
+#contato.Contato {
+  text-align: center;
+  justify-content: center;
+  margin: 90px;
 }
 
+h4 {
+  margin-top: -30px;
+  padding: 20px;
+  margin-right: 30px;
+}
 
-.empresas_confiam{
+.empresas_confiam {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+.container-card {
+  margin: 1vh 1vw 1vh 1vw;
+  max-width: 40vw;
+  padding: 2vw;
+  border: solid 0.5px;
+  justify-content: start;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin: 80px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+
+.date {
+  padding: 1vw;
+
+  justify-content: end;
+  width: 100%;
+  text-align: end;
+}
+
+.contact-info {
+}
+
+@media screen and (max-width: 500px) {
+  form {
     display: flex;
-
-    flex-wrap: wrap;
-}
-.container-card{
-    margin: 5vh 5vw 5vh 4vw;
-    max-width: 40vw;
-    padding: 2vw;
-    border: solid 0.5px;
-    justify-content: start;
- 
-}
-
-
-.container{
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 10px;
-    margin: 80px;
-}
-
-.card{
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-    
-}
-
-.date{
-    padding: 1vw;
-    
-    justify-content: end;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    text-align: end;
-}
+    padding: 10px;
+    box-sizing: border-box;
+  }
 
-@media screen  and (max-width: 1000px) { 
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-
-    }
-
-    header, form, table, img{
-    width: 70%;
+  header,
+  form,
+  table,
+  img {
+    width: 50%;
     box-sizing: border-box;
     flex-direction: row;
+  }
+
+  table,
+  th,
+  td {
+    text-align: center;
+  }
+
+  span.border.border-secondary,
+  img#card1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+  }
+
+  .contato.Contato {
+    max-width: 50%;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+  }
+
+  img#projeto {
+    width: 100%;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    margin: 20px;
+  }
+  .contact-info {
+    max-width: 100%;
+    margin-top: 1300px;
+    margin-left: 180px;
+  }
 }
 
-    table , th , td{
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5em;
+  }
 
-        text-align: center;
-    }
-    
-    span.border.border-secondary, img#card1{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        margin: 20px;
-    }
+  .subtitle {
+    font-size: 1em;
+  }
+
+  .image-container img {
+    margin: 5px;
+  }
+
+  .contact-icons img#whatsapp {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 1.2em;
+  }
+
+  .subtitle {
+    font-size: 0.9em;
+  }
+
+  .contact-icons img#whatsapp {
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+  }
+
+  img#whatsapp {
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    margin-top: 40%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 290px;
+    left: 950px;
+  }
+
+  img#github {
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    margin-top: 40%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 90px;
+    left: 1050px;
+  }
+
+  img#linkedn {
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    width: 60px;
+    height: 60px;
+    margin-top: 40%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 980px;
+  }
+
+  .text-overlay {
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    top: 25%;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin: 80px;
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .contact-info {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: -280px;
+    margin-top: -950px;
+    flex-grow: 1;
+    flex-basis: 200;
+  }
+
+  .contact-info {
+    top: 200px;
+  }
+
+  img#mobile {
+    max-width: 100%;
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 200;
+  }
+}
+
+/* design especifico para celulares */
+@media (max-width: 450px) {
+  .contact-info {
+    max-width: 100%;
+  }
+}
+.contact-info {
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  position: absolute;
+  top: 3600px;
+  left: 35%;
+  border-radius: 20px;
+  width: 350px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.contact-item i {
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+.contact-item a {
+  color: white;
+  text-decoration: none;
+}
+.contact-item a:hover {
+  text-decoration: none;
 }
