@@ -1,17 +1,48 @@
 /* nessa inicia a estilização basica do cabeçalho */
 .cabecalho {
-  max-width: 100%;
-  height: 70px;
+  max-width: 100vw;
+  min-height: 70px;
   background-color: rgb(34, 34, 44);
   color: #ffff;
-  padding: 10px 3px;
-  margin: 0px 10px;
+  
+/* Centralizado na horizontal */  
+  display: flex;
+  justify-content: center;
+
+  /*Daniel:Removido por ser desnecessário*/
+  /* padding: 10px 3px; */ 
+  /* margin: 0px 10px; */
 }
 
-img.logo {
-  max-width: 100%;
-  width: 30px;
-  height: 30px;
+.logo {
+  max-width: 24px;
+  max-height: 24px;
+  margin: auto;  
+
+}
+
+.justify-content-end{
+
+/* background-color: red; */ /*Daniel: Sempre bom pintar o fundo do elemento para se orientar*/
+
+/* Centralizado na vertical */
+display: flex;
+place-content: center;
+max-width: 70vw;
+/* align-items: center;
+justify-content: center; */
+/* margin: auto; */
+}
+.nav-link, .logo{
+  margin: auto;
+}
+a.nav-link {
+  color: #fff;
+  place-content: center;
+  /* padding: 5px; */
+  /* margin: 20px; */
+  /* justify-content: space-around; */
+ 
 }
 
 body {
@@ -20,19 +51,19 @@ body {
   font-family: Arial, sans-serif;
 }
 
-a.nav-link {
-  color: #fff;
-}
+
 
 /* Inicia a estilização do "sou o victor */
 
+
+/* Muito cuidado com essa definições que vão afetar o site inteiro img e h1 nesse exemplo */
 img {
-  width: 500px;
+  /* width: 500px;
   height: 300px;
-  margin: 30px;
-  display: inline-block;
-  margin: 0 0 20px 0;
-  max-width: 800px;
+  margin: 30px; */
+  /* display: inline-block; */
+  /* margin: 0 0 20px 0;
+  max-width: 800px; */
 }
 
 h1 {
@@ -62,6 +93,10 @@ h1.myprojects {
 }
 
 h2#victor {
+
+  /* Daniel: Não esquecer de definir a familia de fontes conforme o figma */
+  font-family: "poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
   padding: 10px 20px;
   color: coral;
   font-size: 2em;
@@ -80,6 +115,12 @@ P.description {
 /* Inicia a estilização de minhas Habilidades */
 
 .habilidades {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  /* background-color: red; */
+ 
 }
 span.border.border-secondary {
   padding: 20px;
@@ -100,8 +141,8 @@ span.border.border-secondary {
 }
 
 .grid.text-center {
-  padding: 5px;
-  margin: 0px 15px;
+  /* padding: 5px;
+  margin: 0px 15px; */
 }
 
 h1.empresas {
@@ -125,23 +166,61 @@ h1.empresas {
 }
 
 img#projeto {
-  display: inline-block;
+  /* display: flex;
+  flex-direction: row;
   width: 400px;
   height: 300px;
   margin: 14px;
-  margin-left: 40px;
+  margin-left: 40px; */
 }
 
-.projetos {
-  display: inline-block;
-  text-align: center;
+
+.container_projetos{
+  
+  margin: auto;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+  margin: auto;
+}
+
+
+
+.projetos {
+  
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+
+  /* Daniel: Se você já criou aqui pq tem ... (continua).. */
+}
+
+
+.imagem_projeto{
+  flex-direction: column;
+
+  h5{
+    font-size: 16px;
+    font-family: "poppins";
+  }
+
 }
 
 h3 {
   text-align: center;
   font-size: 20px;
 }
+
+
+/* Se você tem uma repetição do mesmo comando poderia encurtar conforme exemplo: */
+/* img#mobile, img#whatsapp {
+  max-width: 100%;
+  (...)
+} */
 
 img#mobile {
   max-width: 100%;
@@ -455,13 +534,18 @@ h4 {
 }
 
 .projetos {
-  width: 300px;
+  /* width: 300px;
   height: 300px;
-  display: inline-block;
+  /* display: inline-block; */
+  /* /* display: flex; 
+  flex-direction: row;*/ 
+
+/* Daniel: mais um... (continua) */
 }
 
+
 img#projetos {
-  display: inline-block;
+  /* display: inline-block; */
 }
 @media (min-width: 1024px) and (max-width: 1920px) {
   .contact-info {
@@ -493,8 +577,12 @@ img#projeto {
   margin-left: 40px;
 }
 
+
+
+/*...Pq abrir outra?*/
+/* Cuidado com as boas práticas */
 .projetos {
-  display: inline-block;
-  text-align: center;
-  justify-content: center;
+  /* display: inline-block; */
+  /* text-align: center;
+  justify-content: center; */
 }

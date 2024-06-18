@@ -5,7 +5,9 @@
     
     <title>Victor Hugo</title>
     
-    <link rel="stylesheet" href="static/bootstrap.css">
+    <link rel="stylesheet" href="static/bootstrap.css"> 
+    <!-- Daniel: A melhor pratica é utilizar o CDN, pois dessa forma sempre estará com 
+     o Bootstrap atualizado e não consome armazenamento da maquina/server. -->
     <link rel="stylesheet" href="static/style.css">
     
     <link rel="styslesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -19,21 +21,28 @@
             
         <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio |</a>
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
+            <a class="nav-link">|</a>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Habilidades    |</a>
+              <a class="nav-link" href="#skills">Habilidades</a>
             </li>
+            <a class="nav-link">|</a>
             <li class="nav-item">
-              <a class="nav-link" href="#empresas">Empresas |</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#projetos">Projetos | </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contato">Contato |</a>
-              </li>
+              <a class="nav-link" href="#empresas">Empresas </a>
               
+            </li>
+            <a class="nav-link">|</a>
+            <li class="nav-item">
+              <a class="nav-link " href="#projetos">Projetoss</a>
+              </a>
+            </li>
+            <a class="nav-link">|</a>
+            <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+                
+              </li>
+              <a class="nav-link">|</a>
             <li><a href="#"><img  class="logo" src="Img/linkedinlogo.png" alt="LinkedIn"></a>
               </li>
         
@@ -56,10 +65,16 @@
 
 
     <h1 id="skills" >Minhas Habilidades </h1>
-    <div class="container" >
+    
+    
+    <!-- <div class="container" >   -->
         
-        <div class="grid text-center">
-            
+      <!-- <div class="grid text-center"> 
+        Daniel: Ele obdece seu comando, se você pedir ele realmente vai centralizar. 
+        E não é esse o caso que queremos aqui.
+        -->
+        
+        <div class="habilidades">
 
             <span class="border border-secondary">.c#</span>
             <span class="border border-secondary">Java</span>
@@ -67,13 +82,9 @@
             <span class="border border-secondary">Python</span>
             <span class="border border-secondary">HTML 5</span>
             
-            
-            
-
-          </div>
-
+<!--      </div>
           <div class="grid text-center">
-            
+             -->
 
             <span class="border border-secondary">CSS</span>
             <span class="border border-secondary">SQL</span>
@@ -81,26 +92,20 @@
             <span class="border border-secondary">ADO.net</span>
             <span class="border border-secondary">Web forms</span>
             
-            
-            
-
-          </div>
-
+<!--      </div>
           <div class="grid text-center">
-            
+             -->
 
             <span class="border border-secondary">Asp.net</span>
             <span class="border border-secondary">Jira</span>
             <span class="border border-secondary">Linux</span>
             <span class="border border-secondary">Api Restfull</span>
             <span class="border border-secondary">WorkServices</span>
-            
-            
-            
 
-          </div>
 
+<!--      </div>
           <div class="grid text-center">
+             -->
             
 
             <span class="border border-secondary">Apigee</span>
@@ -109,18 +114,14 @@
             <span class="border border-secondary">git</span>
             <span class="border border-secondary">Entity</span>
             
-            
+  
             
 
-          </div>
+        </div> 
           
 
-
-
-
-
-    </div>
-    
+    <!-- </div>
+     -->
     
 
     
@@ -196,15 +197,28 @@
        
       </div>
     </div>
+    <h1 class="myprojects">Meus Projetos</h1>
+    <!-- Daniel: Você poderia ter feito uma classe só para os titulos, te economizaria mt codigo. -->
 
-    <div class="projetos" id="projetos">
-      <h1 class="myprojects">Meus Projetos</h1>
+  </div class="container_projetos">
+    <div class="projetos">
+    
+      <div class="imagem_projeto">
+      <img src="Img/Projeto1.png" alt="projeto1">
+      <h5>Vocês esqueceu a descrição</h5>
+      </div>
 
-      <img id="projeto" src="Img/Projeto1.png" alt="projeto1">
-      <img id="projeto"  src="Img/projeto2.png" alt="projeto2">
-      <img id="projeto" src="Img/projeto2.png" alt="projetos3">
+      <div class="imagem_projeto">
+        <img src="Img/Projeto1.png" alt="projeto2">
+        <h5>Vocês esqueceu a descrição</h5>
+        </div>
 
-
+        <div class="imagem_projeto">
+          <img src="Img/Projeto2.png" alt="projeto3">
+          <h5>Vocês esqueceu a descrição</h5>
+          </div>
+      
+    </div>
     </div>
 
     <div class="Contato" id="contato">
