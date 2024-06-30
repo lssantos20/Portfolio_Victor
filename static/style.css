@@ -1,43 +1,73 @@
-@media (min-width: 1024px) and (max-width: 1920px) {
-  .cabecalho {
-    max-width: 100%;
-    max-height: 70%;
-    background-color: rgb(34, 34, 44);
-    color: #fff;
-    padding: 10px 3px;
-    margin: 0px 10px;
-  }
+/* nessa inicia a estilização basica do cabeçalho */
+.cabecalho {
+  max-width: 100vw;
+  min-height: 70px;
+  background-color: rgb(34, 34, 44);
+  color: #ffff;
+  text-align: end;
 
-  img.logo {
-    max-width: 100%;
-    width: 30px;
-    height: 30px;
-  }
+  /* Centralizado na horizontal */
+  display: flex;
+  justify-content: center;
+
+  /*Daniel:Removido por ser desnecessário*/
+  /* padding: 10px 3px; */
+  /* margin: 0px 10px; */
+}
+
+.logo {
+  max-width: 24px;
+  max-height: 24px;
+  margin: auto;
+}
+
+.justify-content-end {
+  /* background-color: red; */ /*Daniel: Sempre bom pintar o fundo do elemento para se orientar*/
+
+  /* Centralizado na vertical */
+  display: flex;
+  place-content: center;
+  max-width: 70vw;
+  /* align-items: center;
+justify-content: center; */
+  /* margin: auto; */
+}
+.nav-link,
+.logo {
+  margin: auto;
+}
+a.nav-link {
+  color: #fff;
+  place-content: center;
+  text-align: end;
+  /* padding: 5px; */
+  /* margin: 20px; */
+  /* justify-content: space-around; */
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #1e1f35;
-}
-
-a.nav-link {
   color: #fff;
+  background-color: #1e1f35;
+  font-family: Arial, sans-serif;
 }
 
-/* Inicia a estilização do "eu sou victor" */
+/* Inicia a estilização do "sou o victor */
 
+/* Muito cuidado com essa definições que vão afetar o site inteiro img e h1 nesse exemplo */
 img {
-  width: 500px;
+  /* width: 500px;
   height: 300px;
-  margin: 30px;
-  display: inline-block;
-  margin: 0 0 20px 0;
-  max-width: 800px;
+  margin: 30px; */
+  /* display: inline-block; */
+  /* margin: 0 0 20px 0;
+  max-width: 800px; */
+}
+
+h1 {
+  margin: 20px 0px 10px 50px;
+  justify-content: center;
+  margin-right: 0px;
+  margin-left: 180px;
 }
 
 h1#skills {
@@ -53,7 +83,18 @@ h1#skills {
   padding: 20px;
 }
 
+h1.myprojects {
+  text-align: center;
+  justify-content: center;
+  margin-left: 90px;
+}
+
 h2#victor {
+  /* Daniel: Não esquecer de definir a familia de fontes conforme o figma */
+  font-family: "poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+
   padding: 10px 20px;
   color: coral;
   font-size: 2em;
@@ -69,8 +110,15 @@ P.description {
   line-height: 1.5;
 }
 
-/* inicia a estilização  do "minhas habilidades"*/
+/* Inicia a estilização de minhas Habilidades */
 
+.habilidades {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  /* background-color: red; */
+}
 span.border.border-secondary {
   padding: 20px;
   border: #c8ebe9;
@@ -78,28 +126,21 @@ span.border.border-secondary {
   height: -10px;
   display: inline-flex;
   margin: 10px 10px;
-  padding: 15px 20px;
-  border-radius: 5px;
-  text-align: center;
-  min-width: 120px;
-  flex: 1 1 calc(33.333% - 40px);
-  box-sizing: border-box;
+}
+
+.span {
+  border: #fff;
+  background-color: #1e1f35;
+  width: 400px;
+  height: 400px;
+  border-style: outset;
+  color: #fff;
 }
 
 .grid.text-center {
-  padding: 5px;
-  margin: 0px 15px;
+  /* padding: 5px;
+  margin: 0px 15px; */
 }
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-/* empresas que confiam */
 
 h1.empresas {
   text-align: center;
@@ -108,64 +149,73 @@ h1.empresas {
   margin-left: 10px;
 }
 
-.empresas_confiam {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 100px;
+.empresa1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: 10px 10px 10px 10px;
+  background-color: #1e1f35;
+  width: 500px;
+  height: 200px;
+  display: inline-block;
+  border: #fff;
+  border-style: groove;
+  margin-left: 50px;
 }
-.container-card {
-  margin: 1vh 1vw 1vh 1vw;
-  max-width: 40vw;
-  padding: 2vw;
-  border: solid 0.5px;
-  justify-content: start;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px;
-  margin: 80px;
-}
-
-.card {
-  display: flex;
-  flex-direction: row;
-  color: #fff;
-}
-
-.date {
-  padding: 1vw;
-
-  justify-content: end;
-  width: 100%;
-  text-align: end;
-}
-
-/* Meus projetos */
 
 img#projeto {
-  max-width: 100%;
-  display: inline-block;
+  /* display: flex;
+  flex-direction: row;
   width: 400px;
   height: 300px;
   margin: 14px;
-  margin-left: 100px;
+  margin-left: 40px; */
+}
+
+.container_projetos {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+  margin: auto;
 }
 
 .projetos {
-  display: inline-block;
-  text-align: center;
+  display: flex;
   justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+
+  /* Daniel: Se você já criou aqui pq tem ... (continua).. */
 }
 
-.mobile-image {
-  width: 100%;
-  height: auto;
-  display: block;
+.imagem_projeto {
+  flex-direction: column;
+
+  h5 {
+    font-size: 16px;
+    font-family: "poppins";
+  }
+}
+
+h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Se você tem uma repetição do mesmo comando poderia encurtar conforme exemplo: */
+/* img#mobile, img#whatsapp {
+  max-width: 100%;
+  (...)
+} */
+
+img#mobile {
+  max-width: 100%;
   margin-top: 10%;
   margin-right: 100px;
-
+  width: 400px;
   height: 600px;
   margin: 99px 90px 90px 90px;
   padding: -30px;
@@ -247,6 +297,18 @@ h1#emcontato {
   margin: 90px;
 }
 
+h4 {
+  margin-top: -30px;
+  padding: 20px;
+  margin-right: 30px;
+}
+
+.empresas_confiam {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
 .container-card {
   margin: 1vh 1vw 1vh 1vw;
   max-width: 40vw;
@@ -263,117 +325,243 @@ h1#emcontato {
 }
 
 .card {
+  display: flex;
   flex-direction: row;
   color: #fff;
 }
 
+.date {
+  padding: 1vw;
 
-.contact-info {
-  position: absolute;
-  top: 230%; /* Ajuste conforme necessário */
-  left: 28%;
-  transform: translate(-50%, -50%);
-  width: 20%; /* Ajuste conforme necessário */
-  color: white;
+  justify-content: end;
+  width: 100%;
+  text-align: end;
 }
 
+@media screen and (max-width: 500px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  header,
+  form,
+  table,
+  img {
+    width: 50%;
+    box-sizing: border-box;
+    flex-direction: row;
+  }
+
+  table,
+  th,
+  td {
+    text-align: center;
+  }
+
+  span.border.border-secondary,
+  img#card1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+  }
+
+  .contato.Contato {
+    max-width: 50%;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+  }
+
+  img#projeto {
+    width: 100%;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    margin: 20px;
+  }
+  .contact-info {
+    max-width: 100%;
+    margin-top: 1300px;
+    margin-left: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .subtitle {
+    font-size: 1em;
+  }
+
+  .image-container img {
+    margin: 5px;
+  }
+
+  .contact-icons img#whatsapp {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    position: absolute;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 1023px) {
+  .title {
+    font-size: 1.2em;
+  }
+
+  .subtitle {
+    font-size: 0.9em;
+  }
+
+  .contact-icons img#whatsapp {
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+  }
+
+  img#whatsapp {
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    margin-top: 40%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 290px;
+    left: 950px;
+  }
+
+  img#github {
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    margin-top: 40%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 90px;
+    left: 1050px;
+  }
+
+  img#linkedn {
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    width: 60px;
+    height: 60px;
+    margin-top: 40%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 980px;
+  }
+
+  .text-overlay {
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    top: 25%;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin: 80px;
+}
+
+/* design especifico para celulares */
+@media (min-width: 450px) and (max-width: 1023px) {
+}
+.contact-info {
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  position: absolute;
+  top: 3550px;
+  left: 31%;
+  border-radius: 20px;
+  width: 350px;
+}
 .contact-item {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding: 10px;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.5); /* Ajuste conforme necessário */
+  background: rgba(255, 255, 255, 0.1);
 }
-}
-
 .contact-item i {
   font-size: 1.5em;
-  margin-right: 10px;
+  margin-right: 15px;
 }
-
 .contact-item a {
   color: white;
   text-decoration: none;
 }
-
 .contact-item a:hover {
   text-decoration: none;
 }
 
-/* design para celulares definido */
+.projetos {
+  /* width: 300px;
+  height: 300px;
+  /* display: inline-block; */
+  /* /* display: flex; 
+  flex-direction: row;*/
 
-/*  */
+  /* Daniel: mais um... (continua) */
+}
 
-@media (min-width: 450px) and (max-width: 1023px) {
-  body {
-    max-width: 100%;
-  }
-
-  .cabecalho {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(34, 34, 44);
-    color: #fff;
-    padding: 10px 3px;
-    margin: 0px 10px;
-  }
-
-  img.logo {
-    max-width: 100%;
-    width: 30px;
-    height: 30px;
-  }
-  /*
+img#projetos {
+  /* display: inline-block; */
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
   .contact-info {
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    text-align: left;
     position: absolute;
-    top: 3550px;
-    left: 31%;
-    border-radius: 20px;
-    width: 350px;
-  }
-    
-  .contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-    padding: 10px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.1);
-  }
-  .contact-item i {
-    font-size: 1.5em;
-    margin-right: 15px;
-  }
-  .contact-item a {
-    color: white;
-    text-decoration: none;
-  }
-  .contact-item a:hover {
-    text-decoration: none;
-  }*/
-
-  .projetos {
-    flex-direction: column;
+    max-width: 100%;
+    margin-left: -220px;
+    margin-top: 2700px;
+    flex-grow: 1;
+    flex-basis: 200;
   }
 
-  img#projetos {
-    display: inline-block;
+  .contact-info {
+    top: 10px;
+  }
+
+  img#mobile {
+    max-width: 100%;
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 200;
   }
 }
 
-/*  
-.victor {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  flex-wrap: wrap;
-  text-align: center;
+img#projeto {
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+  margin: 14px;
+  margin-left: 40px;
 }
-*/

@@ -1,37 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contato Fixo</title>
-    <link rel="stylesheet" href="static/style1.css" />
+    <title>Contato</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        background-color: #1b1b32;
+        font-family: Arial, sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .contact-info {
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        text-align: left;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .contact-item i {
+        font-size: 1.5em;
+        margin-right: 15px;
+      }
+      .contact-item a {
+        color: white;
+        text-decoration: none;
+      }
+      .contact-item a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <img src="Img/Victor_mobile.png" alt="Mobile" class="mobile-image" />
-      <div class="contact-info">
-        <div class="contact-item">
-          <i class="fas fa-phone"></i>
-          <a>Dados do Contato<br />(11) 96665-3958</a>
-        </div>
-        <div class="contact-item">
-          <i class="fab fa-linkedin"></i>
-          <span>
-            <a
-              href="https://www.linkedin.com/in/victor-hugo-amorim-fibla"
-              target="_blank"
-              >Linkedn<br />Victor Hugo Amorim Fibla</a
-            >
-          </span>
-        </div>
-        <div class="contact-item">
-          <i class="fab fa-github"></i>
-          <span>
-            <a href="https://github.com/" target="_blank"
-              >https://github.com/</a
-            >
-          </span>
-        </div>
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <span>Dados do Contato<br />(11) 96665-3958</span>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <span>
+          <a
+            href="https://www.linkedin.com/in/victor-hugo-amorim-fibla"
+            target="_blank"
+            >Victor Hugo Amorim Fibla | LinkedIn</a
+          >
+        </span>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-github"></i>
+        <span>
+          <a href="https://github.com/" target="_blank">https://github.com/</a>
+        </span>
       </div>
     </div>
   </body>

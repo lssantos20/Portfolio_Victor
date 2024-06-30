@@ -9,7 +9,6 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
   background-color: #1e1f35;
   color: #fff;
 }
@@ -19,12 +18,10 @@ h2#victor {
   color: coral;
   font-size: 2em;
   margin-bottom: 20px;
-  flex-wrap: wrap;
   word-break: normal;
-  display: block;
 }
 
-P.description {
+p.description {
   display: block;
   font-size: 1.2em;
   line-height: 1.5;
@@ -33,11 +30,8 @@ P.description {
 #img.hugo {
   width: 50%;
   box-sizing: border-box;
-  flex-direction: row;
   width: 500px;
   height: 300px;
-  margin: 30px;
-  display: inline-block;
   margin: 0 0 20px 0;
   max-width: 800px;
 }
@@ -50,14 +44,11 @@ P.description {
   padding: 1em;
   max-width: 100%;
   min-height: 70px;
-
   text-align: end;
 }
 
 .cabecalho ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -80,8 +71,6 @@ P.description {
 
 .victor img {
   width: 30%;
-  box-sizing: border-box;
-  flex-direction: row;
 }
 
 /* Habilidades estilização */
@@ -96,7 +85,6 @@ span.border.border-secondary {
   padding: 20px;
   border: #c8ebe9;
   width: 300px;
-  height: -10px;
   display: inline-flex;
   margin: 10px 10px;
 }
@@ -104,14 +92,12 @@ span.border.border-secondary {
 h1#skills {
   text-align: center;
   margin-left: -10px;
-  justify-content: center;
 }
 
-/* Empresas estilização 
-  */
+/* Empresas estilização */
+
 h1.empresas {
   text-align: center;
-  justify-content: center;
   display: flex;
   margin-left: 10px;
 }
@@ -122,8 +108,9 @@ h1.empresas {
   flex-wrap: wrap;
   margin-left: 100px;
 }
+
 .container-card {
-  margin: 1vh 1vw 1vh 1vw;
+  margin: 1vh 1vw;
   max-width: 40vw;
   padding: 2vw;
   border: solid 0.5px;
@@ -145,51 +132,22 @@ h1.empresas {
 
 .date {
   padding: 1vw;
-
   justify-content: end;
   width: 100%;
   text-align: end;
 }
 
 /* Projetos section styles */
+
 h1.myprojects {
   text-align: center;
-  justify-content: center;
   margin-left: -70px;
 }
 
 .container_projetos {
-  margin: auto;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  justify-items: center;
-  justify-self: center;
-  margin: auto;
-}
-
-.projetos {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.img {
-  width: 50%;
-  box-sizing: border-box;
-  flex-direction: row;
-}
-
-.container_projetos {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  justify-self: center;
   margin: auto;
 }
 
@@ -206,8 +164,6 @@ h1.myprojects {
 
 .imagem_projeto img {
   width: 100%;
-  box-sizing: border-box;
-  flex-direction: row;
 }
 
 /* Contato section styles */
@@ -237,14 +193,17 @@ h1.myprojects {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.1);
 }
+
 .contact-item i {
   font-size: 1.5em;
   margin-right: 15px;
 }
+
 .contact-item a {
   color: white;
   text-decoration: none;
 }
+
 .contact-item a:hover {
   text-decoration: none;
 }
@@ -252,77 +211,56 @@ h1.myprojects {
 img#mobile {
   max-width: 100%;
   margin-top: 10%;
-  margin-right: 100px;
   width: 400px;
   height: 600px;
   margin: 99px 90px 90px 90px;
-  padding: -30px;
 }
 
-img#whatsapp {
+img#whatsapp,
+img#github,
+img#linkedn {
   max-width: 100%;
   width: 60px;
   height: 60px;
   margin-top: 40%;
-  width: 60px;
-  height: 60px;
   position: absolute;
+}
+
+img#whatsapp {
   top: 2090px;
   left: 950px;
 }
 
 img#github {
-  max-width: 100%;
-  width: 60px;
-  height: 60px;
-  margin-top: 40%;
-  width: 60px;
-  height: 60px;
-  position: absolute;
   top: 2090px;
   left: 1050px;
 }
 
 img#linkedn {
-  max-width: 100%;
-  width: 60px;
-  height: 60px;
-  width: 60px;
-  height: 60px;
-  margin-top: 40%;
-  width: 60px;
-  height: 60px;
-  position: absolute;
   top: 2190px;
   left: 980px;
 }
 
-img#card1 {
-  top: 3000px;
+img#card1,
+img#card2,
+img#card3 {
   width: 300px;
   height: 50px;
   margin: 60px 60px;
   position: absolute;
   left: 150px;
+}
+
+img#card1 {
+  top: 3000px;
 }
 
 img#card2 {
   top: 2800px;
-  width: 300px;
-  height: 50px;
-  margin: 60px 60px;
-  position: absolute;
-  left: 150px;
-  background-color: url();
 }
 
 img#card3 {
   top: 2900px;
-  width: 300px;
-  height: 50px;
-  margin: 60px 60px;
-  position: absolute;
-  left: 150px;
 }
 
 h1#emcontato {
@@ -344,123 +282,48 @@ h4 {
 .contact-info {
   border-radius: 10px;
   padding: 20px;
-  width: 300px;
   text-align: left;
   position: absolute;
-  top: 650px;
-  left: 22%;
+  left: 24%;
   border-radius: 20px;
-  width: 350px;
+  top: 3900px;
+  width: 370px;
 }
+
 /* Media queries */
 
 /* Small screens (max-width: 768px) */
-
 @media (max-width: 768px) {
   .cabecalho ul {
     flex-direction: row;
   }
+
   .victor img {
     width: 80px;
     height: 80px;
   }
+
   .habilidades span {
     margin: 5px;
     padding: 5px;
   }
-  .container-card {
+
+  .container-card,
+  .imagem_projeto,
+  .contact-item {
     width: calc(50% - 20px);
   }
-  .imagem_projeto {
-    width: calc(50% - 20px);
-  }
+
   .contact-icons img {
     width: 30px;
     height: 30px;
   }
-  .contact-item {
-    width: calc(50%);
-  }
 }
 
-.contact-info {
-  border-radius: 10px;
-  padding: 20px;
-  width: 300px;
-  text-align: left;
-  position: absolute;
-  top: 3950px;
-  left: 24%;
-  border-radius: 20px;
-  width: 350px;
-}
-.contact-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 25px;
-  padding: 10px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.1);
-}
-.contact-item i {
-  font-size: 1.5em;
-  margin-right: 15px;
-}
-.contact-item a {
-  color: white;
-  text-decoration: none;
-}
-.contact-item a:hover {
-  text-decoration: none;
-}
-
-.empresas_confiam {
-  width: 100%;
-  height: 70%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 100px;
-}
-.container-card {
-  margin: 1vh 1vw 1vh 1vw;
-  max-width: 40vw;
-  padding: 2vw;
-  border: solid 0.5px;
-  justify-content: start;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px;
-  margin: 80px;
-}
-
-.card {
-  display: flex;
-  flex-direction: row;
-  color: #fff;
-}
-
-.date {
-  padding: 1vw;
-
-  justify-content: end;
-  width: 100%;
-  text-align: end;
-}
-
-@media (max-width: 1400px) {
+@media (min-width: 769px) and (max-width: 1400px) {
   .contact-info {
     background-color: brown;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    text-align: left;
-    position: absolute;
     top: 3950px;
-    left: 24%;
-    border-radius: 20px;
     width: 350px;
   }
 }
