@@ -84,7 +84,8 @@ p.description {
 span.border.border-secondary {
   padding: 20px;
   border: #c8ebe9;
-  width: 300px;
+  width: 200px;
+  height: 50px;
   display: inline-flex;
   margin: 10px 10px;
 }
@@ -99,7 +100,8 @@ h1#skills {
 h1.empresas {
   text-align: center;
   display: flex;
-  margin-left: 10px;
+  margin-left: 470px;
+  padding: 10px;
 }
 
 .empresas_confiam {
@@ -174,6 +176,7 @@ h1.myprojects {
 }
 
 .contact-icons {
+  position: relative;
   display: flex;
   justify-content: center;
   margin: 20px;
@@ -189,7 +192,8 @@ h1.myprojects {
   display: flex;
   align-items: center;
   margin-bottom: 25px;
-  padding: 10px;
+  padding: 5px;
+  width: 200px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.1);
 }
@@ -222,23 +226,23 @@ img#linkedn {
   max-width: 100%;
   width: 60px;
   height: 60px;
-  margin-top: 40%;
+  margin-top: -150%;
   position: absolute;
 }
 
 img#whatsapp {
   top: 2090px;
-  left: 950px;
+  left: 650px;
 }
 
 img#github {
   top: 2090px;
-  left: 1050px;
+  left: 750px;
 }
 
 img#linkedn {
-  top: 2190px;
-  left: 980px;
+  top: 2090px;
+  left: 850px;
 }
 
 img#card1,
@@ -311,7 +315,7 @@ h4 {
   .container-card,
   .imagem_projeto,
   .contact-item {
-    width: calc(50% - 20px);
+    width: calc(30% - 20px);
   }
 
   .contact-icons img {
@@ -322,8 +326,7 @@ h4 {
 
 @media (min-width: 769px) and (max-width: 1400px) {
   .contact-info {
-    background-color: brown;
-    top: 3950px;
-    width: 350px;
+    top: 400px;
+    margin-left: -100px;
   }
 }
