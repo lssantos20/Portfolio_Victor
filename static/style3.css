@@ -10,10 +10,13 @@ body {
   background-color: #333;
   color: #fff;
   padding: 1em;
-  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
   min-height: 70px;
   text-align: end;
 }
+
+
 
 .cabecalho ul {
   list-style: none;
@@ -113,12 +116,70 @@ h1.empresas {
   flex-wrap: wrap;
   margin-left: 100px;
 }
+/* estilizando entre em contato*/
 
+h1#emcontato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3#clique {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+img#mobile {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 5px;
+  width: 200px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+div.contact-icons {
+  display: flex;
+  justify-content: baseline; /* Distribui as imagens com espaço entre elas */
+  flex-wrap: nowrap;
+}
+/* estilizando para a tela de entre em contatos 
 /* Ajuste para telas menores */
 @media (max-width: 768px) {
   .empresas_confiam {
     margin-left: 20px;
   }
+}
+
+.img#mobile {
+  max-width: 100%;
+  height: auto;
+  space-between
+}
+
+img#whatsapp,
+#github,
+#linkedn {
+  position: absolute;
+  top: 200%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  margin: 10px 10px 10px 10px;
 }
 
 .container-card {
@@ -133,7 +194,7 @@ h1.empresas {
 @media (max-width: 768px) {
   .container-card {
     max-width: 20vw; /* Ajuste para preencher mais a largura da tela */
-    padding: 1vh 1vw;
+    padding: 10vh 10vw;
   }
 }
 
@@ -147,7 +208,7 @@ h1.empresas {
 /* Ajuste para telas menores */
 @media (max-width: 768px) {
   .empresas_confiam {
-    margin-left: 0;
+    margin-left: 100px;
   }
 }
 
@@ -239,4 +300,36 @@ h1.myprojects {
 
 .imagem_projeto img {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* ou use space-around, space-evenly, flex-start, flex-end */
+  }
+
+  .project {
+    flex: 1 1 10%; /* ajusta a largura dos itens conforme necessário */
+    margin: 10px;
+    text-align: center;
+  }
+
+  .project img {
+    max-width: 50%;
+    height: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .projetos {
+    display: flex;
+    justify-content: baseline; /* Distribui as imagens com espaço entre elas */
+    flex-wrap: nowrap;
+  }
+
+  .projetos img {
+    width: 78%;
+    margin-bottom: 10px;
+  }
 }
