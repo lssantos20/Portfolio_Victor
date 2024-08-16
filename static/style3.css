@@ -11,12 +11,11 @@ body {
   color: #fff;
   padding: 1em;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   min-height: 70px;
   text-align: end;
+  box-sizing: border-box;
 }
-
-
 
 .cabecalho ul {
   list-style: none;
@@ -135,10 +134,54 @@ div.contact-icons {
   align-items: center;
   height: 100vh;
   text-align: center;
+  margin: 0px 40px;
 }
+
+div.contact-info {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  position: absolute;
+  left: 29%;
+  border-radius: 20px;
+  top: 240%;
+  width: 370px;
+}
+
+img#github {
+  position: absolute;
+  top: 240%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+img#linkedn {
+  position: absolute;
+  top: 240%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+img#whatsapp {
+  position: absolute;
+  top: 240%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  margin: 10px 10px 10px 10px;
+}
+
 img#mobile {
   max-width: 100%;
   height: auto;
+  margin: 0px 20px;
 }
 
 .contact-item {
@@ -167,21 +210,7 @@ div.contact-icons {
 .img#mobile {
   max-width: 100%;
   height: auto;
-  space-between
 }
-
-img#whatsapp,
-#github,
-#linkedn {
-  position: absolute;
-  top: 200%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  gap: 10px;
-  margin: 10px 10px 10px 10px;
-}
-
 .container-card {
   margin: 1vh 1vw;
   max-width: 40vw;
@@ -331,5 +360,52 @@ h1.myprojects {
   .projetos img {
     width: 78%;
     margin-bottom: 10px;
+  }
+
+  div.contact-info {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    position: absolute;
+    left: 16%;
+    border-radius: 20px;
+    top: 132%;
+    width: 370px;
+  }
+
+  img#github {
+    position: absolute;
+    top: 130%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+    margin: 10px 10px 10px 10px;
+  }
+
+  img#linkedn {
+    position: absolute;
+    top: 130%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+    margin: 10px 10px 10px 10px;
+  }
+
+  img#whatsapp {
+    position: absolute;
+    top: 130%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+    margin: 10px 10px 10px 10px;
+  }
+
+  img#mobile {
+    max-width: 100%;
+    height: auto;
+    margin: 0px 20px;
   }
 }
