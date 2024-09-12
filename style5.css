@@ -1,0 +1,118 @@
+.container {
+  z-index: 1;
+}
+.cabecalho {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  max-width: 100%;
+  min-height: 70px;
+  text-align: end;
+  overflow-x: hidden;
+}
+
+.cabecalho ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.cabecalho li {
+  margin-right: 20px;
+}
+
+.cabecalho a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.grid {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar as colunas em linhas conforme o espaço */
+  justify-content: space-between;
+  width: 100%; /* O grid ocupará 100% da largura disponível */
+  height: 100%;
+  padding: 0 16px; /* Espaçamento lateral */
+  box-sizing: border-box;
+  z-index: -1;
+  top: 0;
+}
+
+.column {
+  width: calc(
+    100% / 12 - 16px
+  ); /* Largura relativa de cada coluna menos o espaçamento */
+  height: 1000px; /* Altura fixa inicial */
+  background-color: rgba(
+    248,
+    233,
+    233,
+    0.85
+  ); /* Vermelho com 85% de opacidade */
+  margin-bottom: 16px; /* Espaçamento inferior para as quebras de linha */
+  box-sizing: border-box;
+}
+
+/* Remove o espaçamento lateral entre colunas nas últimas da linha */
+.column:nth-child(12n) {
+  margin-right: 0;
+}
+
+/* Responsividade para tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .column {
+    width: calc(100% / 6 - 16px); /* 6 colunas em vez de 12 */
+  }
+
+  .cabecalho {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    max-width: 100%;
+    min-height: 70px;
+    text-align: end;
+    overflow-x: hidden;
+  }
+}
+
+/* Responsividade para dispositivos móveis (menor que 768px) */
+@media (max-width: 768px) {
+  .column {
+    width: calc(100% / 4 - 16px); /* 4 colunas */
+  }
+
+  .cabecalho {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    max-width: 80%;
+    min-height: 70px;
+    text-align: end;
+    overflow-x: hidden;
+  }
+}
+
+/* Responsividade para telas pequenas (menor que 480px) */
+@media (max-width: 480px) {
+  .column {
+    width: calc(100% / 2 - 16px); /* 2 colunas */
+  }
+}
+
+/* Responsividade para telas muito pequenas (menor que 360px) */
+@media (max-width: 360px) {
+  .column {
+    width: 100%; /* Colunas ocupam 100% da largura da tela */
+  }
+}
+
+.victor,
+.habilidades,
+.empresas_confiam,
+.projetos,
+.Contato {
+  position: relative; /* ou fixed, dependendo do seu layout */
+  z-index: 1; /* Ou qualquer valor maior que o da .grid */
+}
