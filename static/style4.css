@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0px auto;
+  background-color: #1e1f35;
+  color: #d4d4dc;
+
+  padding: 100px;
+}
+
+.body {
+  background-color: #1e1f35;
+
+  color: #d4d4dc; /* Cor do texto */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* apartir dessa linha se inicia a personalizaçao do cabeçalho */
+.cabecalho {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  max-width: 100%;
+  min-height: 70px;
+  text-align: end;
+  overflow-x: hidden;
+}
+
+.cabecalho ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.cabecalho li {
+  margin-right: 20px;
+}
+
+.cabecalho a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* a apartir daqui inicia a estilização do "eu sou victor */
+h1.title {
+  display: flex;
+  font-size: 44px;
+}
+font {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+div.victor {
+  margin: 0 auto;
+}
+
+p.description {
+  max-width: 60px;
+  margin: 0 auto;
+  padding: 0px;
+  max-width: 250vw;
+  font-size: 24px;
+  float: left;
+  font-family: sans-serif;
+  line-height: 1.5;
+  display: grid;
+  grid-row: 2;
+  grid-column: 2;
+}
+img.hugo {
+  /* Bordas arredondadas na imagem */
+  max-width: 4000px; /* Largura máxima da imagem */
+  width: 130vh;
+
+  margin-top: 20px;
+  /* margin: 0 auto */
+  display: grid;
+  grid-row: 1;
+  grid-column: 1;
+}
+/* inicia minhas habilidades */
+h1#skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.habilidades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px; /* Espaço entre os quadrados */
+  max-width: 100vh; /* Ajuste a largura máxima para caber os quadrados */
+  margin-left: 10vh; /* Centraliza a grade na página */
+}
+
+span.border.border-secondary {
+  padding: 30px;
+  border: #c8ebe9;
+  width: 150px;
+  height: 50px;
+  display: inline-flex;
+  margin: 10px 20px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+/*iniciando empresas que confiam */
+h1.empresas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empresas_confiam {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto; /* Centraliza a grade na página */
+  max-width: 900px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+h2 {
+  font-size: 1rem; /* Tamanho do texto para o parágrafo */
+  color: #bbb; /* Cor do texto dos parágrafos */
+  margin: 0; /* Remove margens padrão */
+}
+
+.container-card {
+  margin: 2vh 2vw;
+  max-width: 10vw;
+  padding: 2vw;
+  border: solid 1px;
+  justify-content: start;
+}
+
+/*
+.container {
+  display: grid;
+
+  gap: 10px;
+  margin: 80px;
+  
+}
+  
+*/
+
+.card {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+
+.date {
+  padding: 2vw;
+  justify-content: end;
+  width: 100%;
+  text-align: end;
+}
+
+@media (min-width: 768px) {
+  .cabecalho {
+    max-width: 100%;
+    min-height: 70%;
+    text-align: end;
+    overflow-x: hidden;
+  }
+
+  .cabecalho ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cabecalho {
+    display: flex;
+    max-width: 100%;
+    justify-content: flex-end;
+  }
+
+  .cabecalho ul {
+    display: flex;
+    text-align: end;
+  }
+
+  div.habilidades {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0px; /* Espaço entre os quadrados */
+    margin-left: 10vh; /* Centraliza a grade na página */
+    max-width: 1000px; /* Ajuste a largura máxima para caber os quadrados */
+    margin-left: 10vh; /* Centraliza a grade na página */
+
+    margin: 0 auto;
+  }
+
+  h1.title {
+    display: flex;
+    font-size: 30px;
+    width: 1000px;
+  }
+  div.victor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  p.description {
+    display: flex;
+    flex-grow: 1;
+    font-size: 22px;
+    flex-basis: 150px;
+  }
+  img.hugo {
+    max-width: 20vw;
+    height: 10%;
+    margin-left: 100px;
+  }
+}
