@@ -1,0 +1,80 @@
+.cabecalho {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  max-width: 100%;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alinha itens nas extremidades */
+  overflow-x: hidden;
+}
+
+/* Estilização do menu de navegação */
+.cabecalho ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.cabecalho li {
+  margin-right: 20px;
+}
+
+.cabecalho a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Adicionando um menu hambúrguer para dispositivos móveis */
+.menu-hamburguer {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+/* Responsividade para tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .cabecalho ul {
+    display: none; /* Esconde o menu padrão */
+  }
+
+  .column {
+    width: calc(100% / 6 - 16px); /* 6 colunas em vez de 12 */
+  }
+}
+
+/* Responsividade para dispositivos móveis (menor que 768px) */
+@media (max-width: 768px) {
+  .column {
+    width: calc(100% / 4 - 16px); /* 4 colunas */
+  }
+
+  /* Adiciona o menu hamburguer */
+
+  .cabecalho {
+    max-width: 100%;
+    padding: 1em;
+  }
+
+  .cabecalho ul {
+    display: none; /* Esconde o menu padrão */
+  }
+}
+
+/* Responsividade para telas pequenas (menor que 480px) */
+@media (max-width: 480px) {
+  .column {
+    width: calc(100% / 2 - 16px); /* 2 colunas */
+  }
+}
+
+/* Responsividade para telas muito pequenas (menor que 360px) */
+@media (max-width: 360px) {
+  .column {
+    width: 100%; /* Colunas ocupam 100% da largura da tela */
+  }
+}
+
+/* Adicione estilos para o menu hambúrguer e menu expandido */
